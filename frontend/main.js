@@ -257,7 +257,7 @@ function addRootActions(rootContext, rootTarget) {
     rootTarget.appendChild(
       renderInputTextForm((txt) => {
         addFolderHandler(rootTarget, txt).then((value) => {
-          rootTarget.appendChild(
+          rootTarget.querySelector(".nested").appendChild(
             renderFolder({
               id: value[0]["id"],
               name: txt,
